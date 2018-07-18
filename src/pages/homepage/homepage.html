@@ -1,0 +1,41 @@
+<!--
+  Generated template for the HomepagePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>homepage</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<p>Latitude of current position is  {{lat}}</p>
+<p>Longitude of current position is {{lng}}</p>
+<p>Speed of the device is {{speed}}</p>
+<p>Altitude of device is {{Altitude}}</p>
+<button ion-button full (click)="openCamera()">Open Camera</button>
+<img [src]="baseImage"/>
+<ion-item>
+  <h1>
+    Send a msg
+  </h1>
+  <ion-item>
+    <ion-label floating>Please Enter phone Number: </ion-label>
+    <ion-input type="text" [(ngModel)]="phone"></ion-input>
+  </ion-item>
+  <ion-label floating>Enter a Text msg:</ion-label>
+<ion-input type="text"[(ngModel)]="textmsg" ></ion-input>
+</ion-item>
+<button ion-button short (click)="sendmsg()" > send Msg </button>
+<button ion-button full (click)="openemailpage()">Email</button>
+<ion-buttons end>
+  <button ion-button (click)="addMarker()"><ion-icon name="add"></ion-icon>Add Marker</button>
+</ion-buttons>
+<div #map id="map"></div>
+
+</ion-content>

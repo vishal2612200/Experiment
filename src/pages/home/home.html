@@ -1,0 +1,86 @@
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Chela+One" rel="stylesheet">
+</head>
+
+
+<!--
+<ion-header>
+<ion-navbar>
+  <ion-title>
+    Login Page
+  </ion-title>
+</ion-navbar>
+</ion-header>
+-->
+<ion-content padding color="videocard">
+ <!-- <ion-card id="homecard">-->
+  <ion-card  id="homecard1">
+      
+<img id="img1" src="https://thumbs.dreamstime.com/b/pegasus-company-golden-horse-creative-logo-design-isolated-black-background-head-fast-animal-branding-label-vector-87086310.jpg">
+<ion-list id="homelist">
+  <ion-item>
+      
+       <ion-label floating><ion-icon ios="ios-person-add" md="md-person-add"></ion-icon>Username</ion-label>
+    <ion-input type="text" id="input1" [(ngModel)]="user.email"></ion-input> 
+  </ion-item>
+<!--<hr style="height:5px;">-->
+ <ion-item >
+    <ion-label floating id>  <ion-icon ios="ios-paper-plane" md="md-paper-plane"></ion-icon>Password
+    </ion-label>
+    <ion-input type="password"id="input2" [(ngModel)]="user.password"></ion-input>
+  </ion-item>
+
+<!--
+  <ion-item>
+    <ion-label>Remember Me</ion-label>
+    <ion-checkbox item-start [(ngModel)]= "Remember" (ionChange)="saveLoginInfo(UserName,UserPassword)"></ion-checkbox>
+  </ion-item>
+-->
+
+
+ <!-- <form (ngSubmit)="login()" [formGroup]="loginForm">
+		<ion-list inset>
+
+			<ion-item [ngClass]="{ invalid: emailErrors.hasError('*', ['touched', 'dirty']) }">
+				<ion-input type="text" placeholder="Email" formControlName="email"></ion-input>
+			</ion-item>
+
+			<div ngxErrors="email" #emailErrors="ngxErrors">
+				<div [ngxError]="['email', 'required']" [when]="['touched', 'dirty']">It should be a valid email</div>
+			</div>
+
+			<ion-item [ngClass]="{ invalid: passwordErrors.hasError('*', ['touched']) }">
+				<ion-input type="password" placeholder="Password" formControlName="password"></ion-input>
+			</ion-item>
+
+			<div ngxErrors="password" #passwordErrors="ngxErrors">
+				<div [ngxError]="['minlength', 'required']" [when]="['touched']">It should be at least 5 characters</div>
+			</div>
+		</ion-list>
+  -->
+  
+  
+  
+  
+  
+  
+  
+</ion-list>
+<button id="new" (click)="login(user)" type="submit" >
+   Log In </button>
+  
+
+
+
+
+   <p align="center" style="font-size:14px;"><a (click)="openforgotpage()" color="primary">forget your password </a></p>
+   <p align="center" style="font-size:18px;">  <a (click)="opensignuppage()">Create your account SignUp</a></p>
+</ion-card>
+<!--</ion-card>-->
+ 
+   </ion-content>
+  
+
+
+  

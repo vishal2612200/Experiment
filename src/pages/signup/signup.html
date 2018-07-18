@@ -1,0 +1,49 @@
+<!--
+  Generated template for the SignupPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<div id="1">
+  <ion-content padding>
+    
+    <div id="maincard">
+  
+      <div id="signupcard">
+  
+    <img id="img2" src="https://image.shutterstock.com/image-photo/signup-gold-text-on-black-260nw-510259069.jpg">
+
+        <ion-list list="list1">
+    <ion-item >
+        <ion-label floating>Name:</ion-label>
+        <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-item >
+        <ion-label floating>Username:</ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item >
+        <ion-label floating>E-mail:</ion-label>
+        <ion-input type="email" [(ngModel)]="user.email"></ion-input>
+    </ion-item>
+    <ion-item >
+    <ion-label floating>Password:</ion-label>
+    <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+    </ion-item>
+    <ion-item >
+        <ion-label floating>Confirm Password:</ion-label>
+        <ion-input type="password"></ion-input>
+    </ion-item>
+    <ion-navbar small>
+    <button id="new1" ion-button color="secondary" type="submit" (click)="register(user)" block>SUBMIT</button>
+</ion-navbar>   
+</ion-list>
+  </div>
+  </div>
+  
+       
+
+  </ion-content>
+  </div>
